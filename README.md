@@ -12,7 +12,8 @@ Overview of project objectives and findings
 
 ### 📂 Repository Structure:
 - **📂 SQL/** – Optimized queries for data extraction, cleaning, and aggregation  
-- **📂 Python-Notebooks/** – Jupyter notebooks for exploratory data analysis  
+- **📂 Python/** – For exploratoration and organisation of data
+- **📂 Jupyter-Notebooks/** – Jupyter notebooks for exploratory data analysis  
 - **📂 Data/** – Sample datasets used for testing  
 - **📂 Visualizations/** – Graphs and charts generated from Python  
 
