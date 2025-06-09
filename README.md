@@ -8,7 +8,7 @@ https://github.com/AnalyticSleuth/test-file/blob/6e1cd75edb90fd4f10abf1354f5b0aa
 Overview of project objectives and findings  
 
 
-🔍 **SQL & Python-driven financial insights using the Microsoft AdventureWorks 2019 dataset.**  
+🔍 **SQL & Python-driven financial insights using the Microsoft AdventureWorks 2019 dataset.**  Q posed = "What is the relationship between Sick Leave and Job Title?
 
 ### 📂 Repository Structure:
 - **📂 SQL/** – Optimized queries for data extraction, cleaning, and aggregation  
@@ -18,10 +18,10 @@ Overview of project objectives and findings
 - **📂 Visualizations/** – Graphs and charts generated from Python  
 
 ### 🛠️ Key Analysis:
-- 📑 **Revenue & Profit Trends** – SQL-based KPI extraction  
-- 🐍 **Customer Segmentation** – Python-driven clustering analysis  
-- 📊 **Sales Performance** – Power BI dashboard integration  
-- 📈 **Inventory Optimization** – SQL queries to track supply chain efficiency  
+- 📑 **Dept Trends** – SQL-based KPI extraction  
+- 🐍 **Dept Segmentation** – Python-driven clustering analysis  
+- 📊 **Production Performance** – Power BI dashboard integration  
+- 📈 **Downtime Optimization** – SQL queries to track sick leave efficiency  
 
 ### 🔗 Repository Access:
 📫 Questions? Connect via [LinkedIn](https://linkedin.com/in/shilla)!  
