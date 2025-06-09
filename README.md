@@ -1,5 +1,5 @@
 <h1 align="center">
-  AdventureWorks2019-Analysis <img src=
+ SQL & Python via Jupyter Notebooks <img src=
 https://github.com/AnalyticSleuth/test-file/blob/6e1cd75edb90fd4f10abf1354f5b0aa4460249a0/images/goal.gif
        alt="Animated Preview" width="50px">
 </h1>
