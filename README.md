@@ -24,3 +24,9 @@ Overview of project objectives and findings
 
 ### 🔗 Repository Access:
 📫 Questions? Connect via [LinkedIn](https://linkedin.com/in/shilla)!  
+
+<p align="center">
+  <img src=
+https://github.com/AnalyticSleuth/SQL-And-Python/blob/42d74da36ed3c3c4e444b61ef3c4729c72216084/Assets/Animation%20-%201749133702083.gif
+width="150px"
+</p>
