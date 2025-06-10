@@ -1,22 +1,48 @@
-# Sample datasets for testing and analysis  
+# Sample Datasets for Testing and Analysis  
 
-# adventure works 2019 = https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms
- data set for this is outlined as below:
--Database Structure:
---The database includes a variety of tables, views, stored procedures, and functions. 
--Sample Data:
---The data simulates a range of business scenarios, including manufacturing, sales, purchasing, product management, and human resources. 
--Size:
---The dataset's size is relatively small compared to production databases, making it easier to manage and distribute. 
--Learning SQL:
---The AdventureWorks database is a popular choice for learning SQL syntax, database design, and SQL Server features. 
--Sample Scenarios:
---The database supports various scenarios like order processing, inventory management, sales reporting, and customer relationship management. 
--Customer Data:
---The database includes information on customers, their orders, and their demographics, which can be used for sales analysis and customer segmentation. 
--Product Data:
---The database contains details about products, including product categories, product names, and product descriptions. 
--Sales Data:
---The database includes sales data, such as sales amounts, sales dates, and sales regions. 
--Revenue:
---The database has data indicating that the total revenue generated was $29 million, with the highest revenue coming from the United States, with the Mountain-200 Black, 46 as the top-selling product
+## AdventureWorks 2019  
+🔗 [Installation & Configuration Guide](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms)  
+
+## Schema Overview  
+- 📌 [Schema Documentation](https://dataedo.com/samples/html/AdventureWorks/doc/AdventureWorks_2/modules/Human_Resources_9/module.html)  
+- 📊 Visual snippet available in **'visualisations - schema2'**  
+
+---
+
+## Dataset Overview  
+
+### 📂 **Database Structure**  
+The database consists of **multiple tables, views, stored procedures, and functions** to support structured data analysis.
+
+### 📊 **Sample Data**  
+Includes **realistic business scenarios** covering **manufacturing, sales, purchasing, product management, and human resources**.
+
+### 📏 **Dataset Size**  
+AdventureWorks is **relatively small** compared to production databases, making it **manageable and easy to distribute**.
+
+### 📖 **Learning SQL**  
+Commonly used for **SQL syntax practice, database design principles, and exploring SQL Server capabilities**.
+
+### 🔍 **Key Business Scenarios**  
+Supports analysis for:
+- **Order processing**
+- **Inventory management**
+- **Sales reporting**
+- **Customer relationship management**
+
+### 🏷 **Customer Data**  
+Contains **customer profiles, purchase history, and demographic insights**, useful for **sales analysis and segmentation**.
+
+### 📦 **Product Data**  
+Stores details like **product categories, names, and descriptions** to assist with **inventory optimization**.
+
+### 💰 **Sales Data**  
+Tracks **sales amounts, transaction dates, and sales regions**, allowing for **financial performance evaluation**.
+
+### 💵 **Revenue Insights**  
+- **Total revenue generated**: $29 million  
+- **Top-selling product**: Mountain-200 Black, size 46  
+- **Largest revenue source**: United States  
+
+---
+ 🚀  
