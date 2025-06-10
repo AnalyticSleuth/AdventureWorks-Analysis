@@ -8,7 +8,8 @@ https://github.com/AnalyticSleuth/test-file/blob/6e1cd75edb90fd4f10abf1354f5b0aa
 Overview of project objectives and findings  
 
 
-🔍 **SQL & Python-driven financial insights using the Microsoft AdventureWorks 2019 dataset.**  Q posed = "What is the relationship between Sick Leave and Job Title?
+🔍 **SQL & Python-driven financial insights using the Microsoft AdventureWorks 2019 dataset.**  
+- **Q** posed = "What is the relationship between Sick Leave and Job Title?
 
 ### 📂 Repository Structure:
 - **📂 SQL/** – Optimized queries for data extraction, cleaning, and aggregation  
