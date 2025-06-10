@@ -1,0 +1,40 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Assuming merged_data contains the relevant columns
+
+# Debugging: Check if merged_data is defined and contains the required columns
+if 'merged_data' not in locals():
+    raise ValueError("merged_data is not defined.")
+required_columns = {'JobTitle', 'SickLeaveHours', 'OrganizationLevel'}
+if not required_columns.issubset(merged_data.columns):
+    raise ValueError(f"merged_data must contain the columns: {required_columns}")
+
+# Debugging: Check for empty or invalid data
+if merged_data.empty:
+    raise ValueError("merged_data is empty.")
+if not pd.api.types.is_numeric_dtype(merged_data['SickLeaveHours']):
+    raise ValueError("SickLeaveHours must be numeric.")
+if not pd.api.types.is_categorical_dtype(merged_data['JobTitle']):
+    merged_data['JobTitle'] = merged_data['JobTitle'].astype('category')
+
+# Ensure Matplotlib backend is set correctly
+import matplotlib
+matplotlib.use('TkAgg')  # Or another backend suitable for your environment
+
+# Ensure JobTitle is treated as a categorical variable
+merged_data['JobTitle'] = merged_data['JobTitle'].astype('category')
+
+# Plot using a stripplot to show individual points
+plt.figure(figsize=(12, 8))
+sns.stripplot(data=merged_data, x='JobTitle', y='SickLeaveHours', hue='OrganizationLevel', dodge=True, palette='deep')
+plt.title('Sick Leave vs Job Title by Organization Level')
+plt.xlabel('Job Title')
+plt.ylabel('Sick Leave Hours')
+plt.legend(title='Organization Level')
+plt.xticks(rotation=45)
+plt.show(block=True)  # Ensure the plot is displayed
+
+print()
