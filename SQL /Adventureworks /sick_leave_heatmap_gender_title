@@ -1,0 +1,68 @@
+
+hr_location_merge = pd.merge(
+    hr_employee,
+    sick_leave_location,
+    on="JobTitle",
+    how="inner"
+)
+
+print("\nPreview of HR + Location Merge:")
+print(hr_location_merge.head())
+
+merged_data = pd.merge(
+    hr_location_merge,
+    sick_leave_department,
+    on="JobTitle",
+    how="inner"
+)
+
+print("\nPreview of Fully Merged Data:")
+print(merged_data.head())
+
+# Check for missing values
+print("\nMissing Values in Merged Data:")
+print(merged_data.isnull().sum())
+
+# Drop rows with missing values in critical columns
+merged_data.dropna(subset=["Gender", "MaritalStatus", "Department", "SickLeaveHours_y"], inplace=True)
+
+# Verify cleaned data
+print("\nCleaned Merged Data:")
+print(merged_data.head())
+
+# Apply logarithm transformation to sick leave hours
+merged_data['Log_SickLeaveHours'] = np.log1p(merged_data['SickLeaveHours_y'])
+
+# Verify the transformation
+print("\nPreview of Transformed Data:")
+print(merged_data[['JobTitle', 'Department', 'SickLeaveHours_y', 'Log_SickLeaveHours']].head())
+
+# Print column names to verify the correct column name for sick leave hours
+print("\nColumn Names in Merged Data:")
+print(merged_data.columns)
+
+# Update the pivot table to use the correct column name
+heatmap_data = merged_data.pivot_table(
+    values="SickLeaveHours_y",  # Use the correct column name
+    index="Department",
+    columns=["Gender", "MaritalStatus"],
+    aggfunc="mean"
+)
+
+
+
+# Bar plot
+plt.figure(figsize=(12, 6))
+sns.barplot(
+    data=grouped_data,
+    x="MaritalStatus",
+    y="SickLeaveHours",
+    hue="Gender",
+    palette=["#FFA500", "#1E90FF"]  # Orange and Blue color theme
+)
+plt.title("Average Sick Leave Hours by Gender and Marital Status (Grouped by Department)", fontsize=14)
+plt.xlabel("Marital Status", fontsize=12)
+plt.ylabel("Average Sick Leave Hours", fontsize=12)
+plt.legend(title="Gender")
+plt.tight_layout()
+plt.show()
