@@ -1,0 +1,40 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Define the data directly in the code
+data = {
+    "JobTitle": [
+        "Production Technician - WC60", "Production Supervisor - WC60", 
+        "Production Technician - WC60", "Marketing Assistant", 
+        "Research and Development Manager", "Production Technician - WC50", 
+        "Production Technician - WC10"
+    ],
+    "BusinessEntityID": [45, 40, 30, 20, 10, 60, 50],
+    "Sum of SickLeaveHours": [25612, 49776, 40230, 236920, 612288, 482404, 1866634],
+    "Sum of Hours variance": [1185, 1341, 2526, 8514, 13119, 27151, 39431]
+}
+
+# Create a DataFrame from the provided data
+df = pd.DataFrame(data)
+
+# Create a scatter plot to show the relationship
+plt.figure(figsize=(10, 6))
+sns.scatterplot(
+    data=df, 
+    x="Sum of SickLeaveHours", 
+    y="Sum of Hours variance", 
+    hue="JobTitle", 
+    palette="coolwarm", 
+    s=100
+)
+
+# Add labels and title
+plt.title("Relationship Between Sick Leave Hours and Hours Variance", fontsize=14)
+plt.xlabel("Sum of Sick Leave Hours", fontsize=12)
+plt.ylabel("Sum of Hours Variance", fontsize=12)
+plt.legend(title="Job Title", bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.tight_layout()
+
+# Show the plot
+plt.show()
