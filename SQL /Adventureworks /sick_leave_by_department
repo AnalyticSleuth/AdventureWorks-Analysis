@@ -13,7 +13,7 @@ sick_leave_by_department.set_index('Department', inplace=True)
 print(hr_employee.head())
 print(sick_leave_by_department.head())
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # Assume 'dept_job_sick_leave' contains job title distribution within departments
 
